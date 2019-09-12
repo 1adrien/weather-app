@@ -11,16 +11,16 @@ $("#submit").on("click", function(){
 	$('p').html(newtemp);
 
 	if (newtemp <= 30) {
-		$('body').css('background-color', 'blue');
+		$('body').css('background-image', 'url(images/winter.jpg)');
 
-	} else if (newtemp >= 31 && newtemp < 50) {
-		$('body').css('background-color', 'red');
+	} else if (newtemp >= 31 && newtemp < 60) {
+		$('body').css('background-image', 'url(images/fall.jpg)');
 
-	} else if (newtemp >= 50 && newtemp < 70) {
-		$('body').css('background-color', 'green');
-		
+	} else if (newtemp >= 60 && newtemp < 90) {
+		$('body').css('background-image', 'url(images/spring.jpg)');
+
 	} else {
-		$('body').css('background-color', 'yellow');
+		$('body').css('background-image', 'url(images/summer.jpg)');
 	};
 	
 	console.log(temperature, convertFa(temperature));
